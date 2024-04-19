@@ -2,6 +2,7 @@ from unidecode import unidecode
 import streamlit as st
 import nltk
 from nltk.tokenize import word_tokenize
+nltk.download('punkt')
 sochudao = {
     2: ["Nghệ thuật và Sáng tạo", "Truyền thông và Quảng cáo", "Tâm lý và Tư vấn tâm lý", "Giáo dục và Đào tạo"],
     3: ["Nghiên cứu và Phát triển", "Tài chính và Đầu tư", "Doanh nhân và Khởi nghiệp", "Luật sư và Luật phá", "Công nghệ thông tin và Lập trình"],
