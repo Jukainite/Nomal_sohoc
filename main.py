@@ -153,6 +153,13 @@ def set_background_image():
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 def main():
+    hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     set_background_image()
     
     st.title("Ứng dụng Tính Thần Số Học")
