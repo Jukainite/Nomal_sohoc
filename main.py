@@ -142,8 +142,19 @@ def format_date(day, month, year):
     formatted_month = str(month).zfill(2)
     formatted_year = str(year)
     return f"{formatted_day}/{formatted_month}/{formatted_year}"
-
+def set_background_image():
+    page_bg_img = f"""
+    <style>
+    .stApp {{
+        background: url("https://cdn.vox-cdn.com/thumbor/Si2spWe-6jYnWh8roDPVRV7izC4=/0x0:1192x795/1400x788/filters:focal(596x398:597x399)/cdn.vox-cdn.com/uploads/chorus_asset/file/22312759/rickroll_4k.jpg");
+        background-size: cover
+    }}
+    </style>
+    """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 def main():
+    set_background_image()
+    
     st.title("Ứng dụng Tính Thần Số Học")
 
     # Hàng nhập ngày tháng năm
